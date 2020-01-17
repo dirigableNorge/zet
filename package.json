@@ -1,0 +1,19 @@
+{
+  "name": "zet",
+  "version": "1.0.0",
+  "description": "zet website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dirigableNorge/zet.git"
+  },
+  "author": "Tarasyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dirigableNorge/zet/issues"
+  },
+  "homepage": "https://github.com/dirigableNorge/zet#readme"
+}

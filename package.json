@@ -33,7 +33,8 @@
     "build": "gulp build",
     "start": "gulp start",
     "dev-build": "gulp dev-build",
-    "dev-start": "gulp dev-start"
+    "dev-start": "gulp dev-start",
+    "pug": "gulp pug"
   },
   "browserslist": [
     "last 2 versions",

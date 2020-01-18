@@ -2,6 +2,7 @@
 
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
+var pug = require("gulp-pug");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
@@ -18,6 +19,15 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
 var del = require("del");
+
+gulp.task("pug", function () {
+  return gulp.src("source/pug/*.pug")
+        .pipe(plumber())
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest("./build/"));
+})
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")

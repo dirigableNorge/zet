@@ -144,5 +144,5 @@ gulp.task("build", gulp.series("clean", "images", "webp", "copy", "css", "sprite
 gulp.task("start", gulp.series("build", "server"));
 
 
-gulp.task("dev-build", gulp.series("css", "html", "jsmin"));
+gulp.task("dev-build", gulp.series("css", "pug", "jsmin"));
 gulp.task("dev-start", gulp.series("dev-build", "server"))

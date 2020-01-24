@@ -1,0 +1,28 @@
+.reviews {
+  max-width: $minWidth;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.reviews__title {
+  @include sectionTitle($main-dark-color);
+}
+
+.reviews__description {
+  @include sectionDescription($main-dark-color);
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.reviews__item {
+  &:not(:first-child) {
+    display: none;
+  }
+}
+
+.review__

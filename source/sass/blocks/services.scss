@@ -19,7 +19,7 @@
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  color: $services-font-color;
+  color: $main-dark-color;
 }
 
 .services__description {
@@ -31,7 +31,7 @@
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: $services-font-color;
+  color: $main-dark-color;
   text-align: center;
 
   &::after {
@@ -44,7 +44,7 @@
     width: 40px;
     height: 2px;
 
-    background-color: $services-font-color;
+    background-color: $main-dark-color;
   }
 }
 
@@ -118,7 +118,7 @@
 
   font-weight: 700;
   text-transform: uppercase;
-  color: $services-font-color;
+  color: $main-dark-color;
   text-align: center;
 }
 
@@ -128,6 +128,6 @@
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
-  color: $services-font-color;
+  color: $main-dark-color;
   text-align: center;
 }

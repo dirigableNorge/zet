@@ -5,11 +5,11 @@
 }
 
 .works__title {
-  @include sectionTitle($services-font-color);
+  @include sectionTitle($main-dark-color);
 }
 
 .works__description {
-  @include sectionDescription($services-font-color);
+  @include sectionDescription($main-dark-color);
 }
 
 .works__list {

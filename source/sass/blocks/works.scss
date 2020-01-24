@@ -1,0 +1,17 @@
+.works {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.works__link img {
+  display: block;
+}

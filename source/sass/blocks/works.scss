@@ -1,6 +1,15 @@
 .works {
   max-width: $maxWidth;
   margin: 0 auto;
+  padding-top: 100px;
+}
+
+.works__title {
+  @include sectionTitle($services-font-color);
+}
+
+.works__description {
+  @include sectionDescription($services-font-color);
 }
 
 .works__list {

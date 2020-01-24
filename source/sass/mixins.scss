@@ -1,0 +1,38 @@
+@mixin sectionTitle($color) {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color;
+}
+
+@mixin sectionDescription($color) {
+  position: relative;
+
+  display: block;
+  margin-bottom: 80px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $services-font-color;
+  text-align: center;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -16px;
+    left: calc(50% - 20px);
+
+    width: 40px;
+    height: 2px;
+
+    background-color: $color;
+  }
+}

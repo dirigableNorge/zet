@@ -1,0 +1,133 @@
+.services {
+  background-color: $services-background-color;
+}
+
+.services__wrapper {
+  max-width: $minWidth;
+  min-width: $minWidth;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: $services-font-color;
+}
+
+.services__description {
+  position: relative;
+
+  display: block;
+  margin-bottom: 80px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $services-font-color;
+  text-align: center;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -16px;
+    left: calc(50% - 20px);
+
+    width: 40px;
+    height: 2px;
+
+    background-color: $services-font-color;
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services__item {
+  position: relative;
+  padding-top: 160px;
+  max-width: 274.5px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: calc(50% - 60px);
+
+    width: 120px;
+    height: 120px;
+
+    background-image: radial-gradient(#485563, #29323c);
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: calc(50% - 60px);
+
+    width: 120px;
+    height: 120px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:nth-child(1)::after {
+    background-image: url("../img/services-laptop.png");
+  }
+
+  &:nth-child(2)::after {
+    background-image: url("../img/services-adjust.png");
+  }
+
+  &:nth-child(3)::after {
+    background-image: url("../img/services-map.png");
+  }
+
+  &:nth-child(4)::after {
+    background-image: url("../img/services-heart.png");
+  }
+
+  &:not(:nth-of-type(4)) {
+    margin-right: 24px;
+  }
+}
+
+.services__item-name {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $services-font-color;
+  text-align: center;
+}
+
+.services__item-text {
+  margin: 0;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: $services-font-color;
+  text-align: center;
+}

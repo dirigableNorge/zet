@@ -1,0 +1,99 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: $minWidth;
+  min-width: $minWidth;
+  margin: 0 auto;
+  padding-top: 210px;
+  padding-bottom: 105px;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: $promo-font-color;
+  text-align: center;
+}
+
+.promo__text {
+  max-width: 640px;
+  margin:0 auto 30px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: $promo-font-color;
+  text-align: center;
+}
+
+.promo__button {
+  margin: 0 auto 145px;
+  padding: 12px 20px;
+
+  font: inherit;
+  font-size: 13px;
+  line-height: 14px;
+  color: $promo-font-color;
+
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.promo__go-next-button {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: transparent;
+  background-image: url("../img/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 1px solid $promo-font-color;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50px;
+    left: 24px;
+
+    width: 1px;
+    height: 105px;
+
+    background-color: $promo-font-color;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

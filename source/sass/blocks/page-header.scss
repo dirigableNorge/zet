@@ -1,0 +1,50 @@
+.page-header {
+  max-width: $maxWidth;
+  margin: 0 auto;
+
+  background-color: #cccccc;
+  background-image: url("../img/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.page-header__navigation {
+  display: flex;
+  max-width: $minWidth;
+  min-width: $minWidth;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+.page-header__logo {
+  display: block;
+  margin-right: auto;
+}
+
+.page-header__menu-toggle-button {
+  align-self: flex-start;
+  padding: 0;
+  padding-right: 39px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 15px;
+  color: $promo-font-color;
+
+  border: 0 none;
+  background-color: transparent;
+  background-image: url("../img/menu.png");
+  background-repeat: no-repeat;
+  background-size: 21px 15px;
+  background-position: top right;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

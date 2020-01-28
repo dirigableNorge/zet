@@ -1,0 +1,42 @@
+.slider-controls {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-controls-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.slider-controls__input + .slider-controls-label {
+  display: block;
+  width: 15px;
+  height: 15px;
+
+  border: 1px solid $main-dark-color;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border-color: rgba($main-dark-color, 0.7);
+  }
+
+  &:active {
+    border-color: rgba($main-dark-color, 0.3);
+  }
+}
+
+.slider-controls__input:checked + .slider-controls-label {
+  background-color: $main-dark-color;
+
+  &:hover,
+  &:focus {
+    border-color: $main-dark-color;
+  }
+
+  &:active {
+    border-color: $main-dark-color;
+  }
+}

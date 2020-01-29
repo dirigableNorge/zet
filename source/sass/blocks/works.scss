@@ -13,12 +13,50 @@
 }
 
 .works__list {
+
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.works__link {
+  position: relative;
+
+  &:hover,
+  &:focus {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+
+      min-width: 320px;
+      min-height: 200px;
+
+      background-color: rgba($overlay, 0.7);
+    }
+
+    &::after {
+      content: attr(data-name);
+
+      position: absolute;
+      top: 100px;
+      left: 0;
+      z-index: 101;
+
+      width: 320px;
+
+      font-size: 15px;
+      font-weight: 700;
+      color: $main-light-color;
+      text-align: center;
+    }
+  }
 }
 
 .works__link img {

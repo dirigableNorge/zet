@@ -38,7 +38,7 @@ html(lang="en")
         small.works__description Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
         ul.works__list
           li.works__item
-            a.works__link(href="404.html")
+            a.works__link(href="404.html", data-name="BOOMING SHOP", data-desc="Website Development")
               img(src="img/works01.jpg", width="320", height="200" alt="work preview.")
           li.works__item
             a.works__link(href="404.html")
@@ -262,17 +262,22 @@ html(lang="en")
               textarea.feedback__text-input(type="text", name="feedback__message", id="feedback__message")
             button.feedback__submit-button(type="sumbit") Submit
     footer.page-footer
-      a.page-footer__logo(href="494.html")
-        img(src="", alt="zet logo.")
-      p.page-footer__copyright © Copyright 2015. Allright Reserved
-      .socials
-        p.socials__title Stay In Touch
-          ul.socials__list
-            li.socials__item
-              a.socials__link(href="404.html") facebook
-            li.socials__item
-              a.socials__link(href="404.html") twitter
-            li.socials__item
-              a.socials__link(href="404.html") googleplus
-            li.socials__item
-              a.socials__link(href="404.html") dribble
+      .page-footer__wrapper
+        a.page-footer__logo(href="404.html")
+          img(src="img/logo-dark.png", width="84", height="31", alt="zet logo.")
+        p.page-footer__copyright © Copyright 2015. Allright Reserved
+        .page-footer__socials.socials
+          p.socials__title Stay In Touch
+            ul.socials__list
+              li.socials__item
+                a.socials__link(href="404.html") facebook
+                 img(src="img/social-big-facebook.png", width="35", height="35", alt="facebook.")
+              li.socials__item
+                a.socials__link(href="404.html") twitter
+                 img(src="img/social-big-twitter.png", width="35", height="35", alt="twitter.")
+              li.socials__item
+                a.socials__link(href="404.html") googleplus
+                  img(src="img/social-big-google.png", width="35", height="35", alt="google plus.")
+              li.socials__item
+                a.socials__link(href="404.html") dribble
+                  img(src="img/social-big-dribble.png", width="35", height="35", alt="dribble")

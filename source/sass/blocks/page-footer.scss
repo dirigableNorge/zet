@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: $grey4;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  align-items: center;
+  max-width: $minWidth;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.page-footer__logo {
+  margin-right: 25px;
+}
+
+.page-footer__copyright {
+  margin-right: auto;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $main-dark-color;
+}
+
+.page-footer__socials {
+  display: flex;
+}

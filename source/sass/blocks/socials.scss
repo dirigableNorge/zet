@@ -1,0 +1,40 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__title {
+  margin: 0;
+  margin-right: 25px;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $main-dark-color;
+}
+
+.socials__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
+  font-size: 0;
+  line-height: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

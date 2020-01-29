@@ -1,0 +1,63 @@
+.person {
+  display: flex;
+  flex-direction: column;
+}
+
+.person__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  padding: 30px 0;
+
+  background-color: $person-background-color;
+}
+
+.person__name {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $main-dark-color;
+  text-align: center;
+}
+
+.person__position {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: $main-dark-color;
+  text-align: center;
+}
+
+.person__socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.person__social-item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.person__social-link {
+  font-size: 0px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

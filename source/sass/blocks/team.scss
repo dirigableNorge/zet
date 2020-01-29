@@ -1,0 +1,61 @@
+.team {
+  background-image: url('../img/promo-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.team__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  max-width: $minWidth;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.team__title {
+  @include sectionTitle($main-light-color);
+}
+
+.team__description {
+  @include sectionDescription($main-light-color);
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 95px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__show-all-button {
+  margin: 0 auto;
+  padding: 12px 20px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1.2;
+  color: $main-light-color;
+
+  border: 1px solid $main-light-color;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,84 @@
+.feedback {
+  width: 50%;
+
+  background-image: url("../img/overlay.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 600px;
+  padding-top: 110px;
+  padding-left: 195px;
+}
+
+.feedback__form-set {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.feedback__label {
+  display: block;
+  padding-top: 20px;
+
+  font-size: 14px;
+  line-height: 14px;
+  color: $grey3;
+}
+
+.feedback__text-input {
+  min-width: 300px;
+  margin-left: auto;
+  padding: 10px;
+
+  font-size: 20px;
+  line-height: 20px;
+  color: $grey3;
+
+  background-color: transparent;
+
+  border: 1px solid rgba($grey3, 0.65);
+
+  &:hover,
+  &:focus {
+    border-color: $grey3;
+  }
+}
+
+textarea.feedback__text-input {
+  min-height: 145px;
+
+  resize: none;
+}
+
+.feedback__submit-button {
+  width: 120px;
+  margin: 0;
+  padding: 16px 0;
+
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  color: $grey3;
+  text-align: center;
+
+  background-color: transparent;
+
+  border: 1px solid rgba($grey3, 0.65);
+
+  &:hover,
+  &:focus {
+    border-color: $grey3;
+  }
+
+  &:active {
+    color: rgba($grey3, 0.7);
+
+    border-color: rgba($grey3, 0.65);
+  }
+}

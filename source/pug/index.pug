@@ -244,21 +244,23 @@ html(lang="en")
             a.prices__pack-button(href="404.html") SIGN UP
       div.page-main__wrapper
         section.map
-          img(src="", alt="")
-          img.map__point
           h2.visually-hidden map
         section.feedback
           h2.visually-hidden feedback
           form.feedback__form(action="", method="post")
-          label.feedback__label(for="feedback__name") Name
-          input.feedback__text-input(type="text", name="feedback__name", id="feedback__name")
-          label.feedback__label(for="feedback__email") Email
-          input.feedback__text-input(type="text", name="feedback__email", id="feedback__email")
-          label.feedback__label(for="feedback__phone") Phone
-          input.feedback__text-input(type="text", name="feedback__phone", id="feedback__phone")
-          label.feedback__label(for="feedback__message") Message
-          textarea.feedback__text-input(type="text", name="feedback__message", id="feedback__message")
-          button.feedback__sumbit-button(type="sumbit") Submit
+            .feedback__form-set
+              label.feedback__label(for="feedback__name") Name
+              input.feedback__text-input(type="text", name="feedback__name", id="feedback__name")
+            .feedback__form-set
+              label.feedback__label(for="feedback__email") Email
+              input.feedback__text-input(type="text", name="feedback__email", id="feedback__email")
+            .feedback__form-set
+              label.feedback__label(for="feedback__phone") Phone
+              input.feedback__text-input(type="text", name="feedback__phone", id="feedback__phone")
+            .feedback__form-set
+              label.feedback__label(for="feedback__message") Message
+              textarea.feedback__text-input(type="text", name="feedback__message", id="feedback__message")
+            button.feedback__submit-button(type="sumbit") Submit
     footer.page-footer
       a.page-footer__logo(href="494.html")
         img(src="", alt="zet logo.")
